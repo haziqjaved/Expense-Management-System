@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUP Page</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+    <div id="App">
+        <div>
+            <div class="App-header">
+                <img src="./icon.png" alt="logo" class="App-logo">
+                <h1>Welcome to Expense Management System</h1>
+            </div>
+        </div>
+        <!-- form work -->
+        <div class="App-intro">
+            <form action="./main page/main.html">
+              <div id="form-gr">
+                <br>
+                <label>User Name</label>
+                <br>
+                <input type="text" id="username" class="form-control" placeholder="Enter Name" value="" data-field="userName" required="">
+              </div>
+              <div id="form-gr">
+                <br>
+                <label >Email:</label>
+                <br>
+                <input type="email" id="email" class="form-control"  placeholder="Enter Email" value="" data-field="email" required="">  
+              </div>
+              <div id="form-gr">
+                  <br>
+                <label>Password</label><br>
+                <input type="password" id="pass" class="form-control" placeholder="Password" value="" data-field="password" required="">
+              </div>
+              <div id="form-gr">
+                  <br>
+                <button type="submit" class="btn-primary" id="signUp" >Sing Up</button>
+              </div>
+            </form>
+            <div id="form-gr">
+                <br>
+                <span>______or_______</span><br><br>
+               <a href="./Sign in/signIn.html"><button class="btn-info">Sign In</button></a>
+                <br><br>
+            </div>
+        </div>
+    </div>
+<script>
+  let arr=[]
+  signUp.onclick=()=>
+  {
+    let name=document.getElementById("username").value;
+    let email=document.getElementById("email").value;
+    let password=document.getElementById("pass").value; 
+    arr.push({name:name,email:email,password:password})
+    localStorage.setItem("allPersons",JSON.stringify(arr))
+
+  }
+</script>
+</body>
+</html>

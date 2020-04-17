@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="./sigIn.css" type="text/css">
+</head>
+<body>
+    <div id="App">
+        <div>
+            <div class="App-header">
+                <img src="../icon.png" alt="logo" class="App-logo">
+                <h1>Welcome to Expense Management System</h1>
+            </div>
+        </div>
+
+        <!-- form work -->
+        <div class="App-intro">
+            <form>
+              <div class="form-gr">
+                <br>
+                <label class="control-label">Email:</label>
+                <br>
+                <input id="lmail"type="email" class="form-control"  placeholder="Enter Email" data-field="email" required="">
+                
+              </div>
+              <div class="form-gr">
+                  <br>
+                <label >Password</label><br>
+                <input id="loginPas" type="pass" class="form-control" placeholder="Password" data-field="password" required="">
+              </div>
+              <br>
+              <div class="form-gr">
+                <button class="btn-info" id="signIn">Sign In</button>
+                  <br>
+              </div>
+            </form>
+        </div>
+    </div>
+    <script>
+    document.getElementById("signIn").onclick=()=>
+  {
+    let lemail=document.getElementById("lmail").value;
+    let lpass=document.getElementById("loginPas").value;
+    (lemail && lpass==localStorage.getItem("email")&localStorage.getItem("pass")) ? alert("Login Succes Fully "):alert("Invalid!Email or Password");
+  }
+    </script>
+</body>
+</html>

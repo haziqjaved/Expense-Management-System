@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="./main.css" type="text/css">
+</head>
+<body>
+    <div id="App">
+        <div>
+            <div class="App-header">
+                Welcome <span id="result"></span>!
+                <a href="../index.html"><button id="logout" type="button">Logout</button></a>
+                <img src="../icon.png" alt="logo" class="App-logo">
+                <h1>Welcome to Expense Management System</h1>
+            </div>
+        </div>
+        <div class="App-intro">
+            <div>
+                <h1 style="margin-bottom: 25px;" >All Expenses</h1>
+                <a href="./add exp.html"><button class="btn btn-primary" id="add">Add Expense!</button></a>
+                <a href="./all Category.html"><button class="btn btn-primary">All Categories!</button></a>
+                <!-- <button class="btn-success" id="button">Generate Report</button> -->
+                <div class="row">
+                    <input type="text" class="form-control" placeholder="Search By Category..." value="" style="margin-top: 10px;">
+                </div>
+            </div>
+            <div id="table">
+                <table id="tab">
+                    <br>
+                    <tbody>
+                        <tr>
+                            <th class="table-border">
+                                Id
+                            </th>
+                            <th class="table-border">
+                                Description
+                            </th>
+                            <th class="table-border">
+                                Amount
+                            </th>
+                            <th class="table-border">
+                                Category
+                            </th>
+                            <th class="table-border">
+                                Actions
+                            </th>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <td class="table-border">
+
+                        </td >
+                        <td class="table-border">
+
+                        </td>
+                        <td class="table-border">
+
+                        </td>
+                        <td class="table-border">
+                        </td>
+                        <td class="table-border">
+                            <button id="delBut" >
+                                delete
+                            </button>
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("result").innerHTML=localStorage.getItem("name");
+        delBut.onclick=()=>
+        {
+            localStorage.clear();
+        }
+    </script>
+</body>
+</html>

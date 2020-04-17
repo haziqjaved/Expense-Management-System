@@ -1,0 +1,49 @@
+
+.App-header
+{
+    text-align: center;
+    background-color: #bf3b3b;
+    height: 248px;
+    padding: 20px;
+    color: #fff;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.App-logo
+{
+    height: 85px;
+}
+.btn-primary
+{
+ background-color: blue;
+ border-color: blue;
+ color: #fff;
+ background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%);
+ border-radius: 4px;
+ height: 40px;
+ width: 80px;
+}
+.btn-info{
+    background-image: linear-gradient(to bottom,#5bc0de 0,#2aabd2 100%);
+    border-color: #28a4c9;
+    background-color: #17a2b8;
+    color: #fff;
+    border-radius: 4px;
+    height: 40px;
+    width: 80px;
+}
+#form-gr
+{
+    text-align: center;
+}
+.form-control
+{
+    width: 95%;
+    height: 37px;
+    border: 1px solid grey;
+    font-family: cursive;
+}
+body{
+    font-family: sans-serif;
+}

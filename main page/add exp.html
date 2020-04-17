@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expenses Page</title>
+    <link rel="stylesheet" href="./main.css" type="text/css">
+</head>
+<body>
+  <div id="App">
+    <div>
+        <div class="App-header">
+          <a href="../index.html"><button id="logout" type="button">Logout</button></a>
+            <img src="../icon.png" alt="logo" class="App-logo">
+            <br>
+          <a href="./main.html"><button id="dashboard" type="button">Back to Dashboard</button></a>
+            <h1>Welcome to Expense Management System</h1>
+        </div>
+    </div>
+    <!-- other work -->
+    <div class="App-intro">
+        <h1 style="margin-bottom: 10px;">Add Expense</h1>
+        <form action="./main.html">
+          <div id="form-gr">
+            <br>
+            <label>Description</label>
+            <br>
+            <input id="des"type="text"  class="form-control" placeholder="Enter Description" value="" required="">
+          </div>
+          <div id="form-gr">
+            <br>
+            <label >Amount</label>
+            <br>
+            <input id="amnt"type="text" class="form-control"  placeholder="Enter Amount" value="" required="">  
+          </div>
+          <div id="form-gr">
+              <br>
+            <label>Category</label><br>
+            <select  class="form-control">
+              <option value="Select Category" id="cat">Select Category</option>
+            </select>
+          </div>
+          <div id="form-gr">
+              <br>
+            <button type="submit" class="btn-primary" id="add">Add</button>
+          </div>
+        </form>
+    </div>
+  </div>
+  <script>
+  add.onclick=()=>
+  {
+    let description=document.getElementById("des").value;
+    let amount=document.getElementById("amnt").value;
+    let category=document.getElementById("cat").value;
+  }
+  </script>
+</body>
+</html>
